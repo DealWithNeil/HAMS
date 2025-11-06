@@ -33,7 +33,7 @@ CREATE TABLE patient (
   password VARCHAR(255)
 ) ENGINE=InnoDB;
 
--- ✅ Appointments table
+--  Appointments table (Remember to link patient_id to patient table and doctor_id to doctor table)
 CREATE TABLE IF NOT EXISTS appointments (
   id INT AUTO_INCREMENT PRIMARY KEY,
   patient_id INT NOT NULL,
